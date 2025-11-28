@@ -1,0 +1,108 @@
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Landon’s Adventure Worksheet — WorksheetBot</title>
+      
+    <style>
+      @page { margin: 0.6in; }
+      body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #111827; background: #ffffff; }
+      .sheet { border: 6px solid #3b82f6; border-radius: 16px; padding: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+      h1 { color: #1f2937; margin: 8px 0 4px 0; }
+      h2 { color: #2563eb; margin-top: 16px; }
+      .meta { font-size: 12px; color: #6b7280; margin-bottom: 8px; }
+      .instructions { background: #f0f9ff; border-left: 6px solid #22d3ee; padding: 10px 12px; border-radius: 8px; }
+      .questions { background: #fef3c7; border-left: 6px solid #f59e0b; padding: 12px 14px; border-radius: 8px; }
+      .tips { background: #ecfccb; border-left: 6px solid #84cc16; padding: 10px 12px; border-radius: 8px; }
+      ul { margin: 8px 0 0 20px; }
+      .footer { text-align: center; color: #6b7280; font-size: 12px; margin-top: 10px; }
+      .icon-row { display: flex; gap: 16px; align-items: center; margin: 6px 0 10px 0; }
+      .spacer { height: 8px; }
+    </style>
+    
+    </head>
+    <body>
+      <div class="sheet">
+        
+    <svg width="100%" height="50" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="100%" height="50" fill="#fef3c7"/>
+      <!-- Checkered pattern -->
+      <g transform="translate(0, 30)">
+        {% for i in range(0, 40) %}
+        <rect x="{{i*25}}" y="0" width="25" height="20" fill="{{'#111827' if i % 2 == 0 else '#e5e7eb'}}"/>
+        {% endfor %}
+      </g>
+      <!-- Stars -->
+      <g>
+        <polygon points="30,15 34,25 45,25 36,31 39,42 30,35 21,42 24,31 15,25 26,25" fill="#f59e0b"/>
+        <polygon points="120,10 124,22 138,22 126,30 130,42 120,34 110,42 114,30 102,22 116,22" fill="#f59e0b"/>
+        <polygon points="220,12 224,24 238,24 226,32 230,44 220,36 210,44 214,32 202,24 216,24" fill="#f59e0b"/>
+      </g>
+    </svg>
+    
+        <div class="meta">Date: Thursday, November 27, 2025 • Theme: Race Cars & Rockets • Created by WorksheetBot</div>
+        <div class="icon-row">
+    <svg width="100%" height="100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Rocket -->
+      <g transform="translate(20,10)">
+        <ellipse cx="20" cy="30" rx="18" ry="28" fill="#9333ea"/>
+        <polygon points="20,2 28,22 12,22" fill="#7c3aed"/>
+        <circle cx="20" cy="30" r="8" fill="#fcd34d"/>
+        <polygon points="20,58 26,70 14,70" fill="#ef4444"/>
+      </g>
+      <!-- Race car -->
+      <g transform="translate(140,30)">
+        <rect x="0" y="10" width="80" height="20" fill="#ef4444" rx="5"/>
+        <rect x="10" y="0" width="50" height="15" fill="#fca5a5" rx="5"/>
+        <circle cx="15" cy="35" r="10" fill="#111827"/>
+        <circle cx="65" cy="35" r="10" fill="#111827"/>
+      </g>
+      <!-- Star -->
+      <g transform="translate(260,20)">
+        <polygon points="20,0 25,15 40,15 28,24 32,40 20,30 8,40 12,24 0,15 15,15" fill="#f59e0b"/>
+      </g>
+    </svg>
+    </div>
+        <h1>Landon’s Adventure Worksheet</h1>
+
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <p>Read each question aloud together. Point to the pictures and use counting strategies.</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="questions">
+          <h2>Questions</h2>
+          <ul>
+            <li>A red race car zooms 5 laps. Then it zooms 3 more. How many laps total?</li><li>A rocket has 7 stars painted on it. A friend adds 2 more. How many stars now?</li><li>A toy box has 10 blocks. Landon builds with 4. How many remain in the box?</li>
+          </ul>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="tips">
+          <h2>Parent tips</h2>
+          <p>Celebrate small wins. Use visuals, movement breaks, and consistent encouragement.</p>
+        </div>
+
+        <div class="spacer"></div>
+        
+    <svg width="100%" height="70" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="100%" height="70" fill="#e0f2fe"/>
+      <!-- Road -->
+      <rect x="0" y="25" width="100%" height="30" fill="#374151"/>
+      <line x1="0" y1="40" x2="100%" y2="40" stroke="#f3f4f6" stroke-width="4" stroke-dasharray="20 15"/>
+      <!-- Blocks -->
+      <rect x="20" y="10" width="20" height="15" fill="#ef4444" rx="3"/>
+      <rect x="45" y="10" width="20" height="15" fill="#10b981" rx="3"/>
+      <rect x="70" y="10" width="20" height="15" fill="#3b82f6" rx="3"/>
+      <rect x="95" y="10" width="20" height="15" fill="#f59e0b" rx="3"/>
+    </svg>
+    
+        <div class="footer">WorksheetBot • Fun learning for Landon • Print and enjoy!</div>
+      </div>
+    </body>
+    </html>
+    
